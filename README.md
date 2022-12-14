@@ -1,2 +1,17 @@
 # Tutorial-Python
 Menghitung Umur Dengan Python
+
+import datetime as dt
+
+tanggal = int(input("Tanggal \t: "))
+bulan = int(input("Bulan \t\t: "))
+tahun = int(input("Tahun \t\t: "))
+
+Tahun_Lahir = dt.date(tahun,bulan,tanggal)
+print(f'Tahun Lahir Anda = {Tahun_Lahir}')
+hari_ini = dt.date.today()
+print(f"Sekarang Tanggal = {hari_ini}")
+
+Umur = (hari_ini - Tahun_Lahir) / 365 
+print(f"Umur anda sekarang = {Umur.days} Tahun")
+
