@@ -1,0 +1,22 @@
+print(20*"=")
+print("Kalkulator Sederhana")
+print(20*"=")
+
+angka1 = float(input("Masukan Angka 1-10 :"))
+operator = input("Masukan +,-,x,/ :")
+angka2 = float(input("Masukan Angka 1-10 :"))
+
+if operator == "+":
+    hasil = angka1 + angka2
+    print(hasil)
+elif operator == "-":
+    hasil = angka1 - angka2
+    print(hasil)
+elif operator == "x":
+    hasil = angka1 * angka2
+    print(hasil)
+else:
+    hasil = angka1 / angka2
+    print(hasil)
+
+print(20*"=")
