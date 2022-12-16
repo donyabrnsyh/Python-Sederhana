@@ -8,15 +8,15 @@ angka2 = float(input("Masukan Angka 1-10 :"))
 
 if operator == "+":
     hasil = angka1 + angka2
-    print(hasil)
+    print(f"Hasil = {hasil}")
 elif operator == "-":
     hasil = angka1 - angka2
-    print(hasil)
+    print(f"Hasil = {hasil}")
 elif operator == "x":
     hasil = angka1 * angka2
-    print(hasil)
+    print(f"Hasil = {hasil}")
 else:
     hasil = angka1 / angka2
-    print(hasil)
+    print(f"Hasil = {hasil}")
 
 print(20*"=")
