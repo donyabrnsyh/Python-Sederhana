@@ -1,0 +1,59 @@
+print(20*'=')
+print('Mesin Kasir Sederhana')
+print(20*'=')
+
+print("""
+============================================
+    Makanan         | Minuman              
+====================|=======================
+1. Nasi Serpang     | 1. Es Teh
+2. Nasi Pecel       | 2. Es Jeruk
+3. Nasi Rawon       | 3 Air Mineral
+============================================
+
+Kode Makanan:
+1. NS --> Nasi Serpang Rp. 15.000
+2. NP --> Nasi Pecel Rp. 10.000
+3. NR --> Nasi Rawon Rp. 15.000
+
+Kode Minuman:
+1. ET --> Es Teh Rp. 3000
+2. EJ --> Es Jeruk Rp. 5000
+3. AM --> Air Mineral Rp. 3000
+""")
+
+pesanan = input('Mau pesan makan atau minumm ? ')
+
+if pesanan == 'makan':
+    kode = input("Kode makanan ? ")
+    if kode == 'ns':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 15000
+        print(harga)
+    elif kode == 'np':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 10000
+        print(harga)
+    elif kode == 'nr':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 15000
+        print(harga)
+    else:
+        print('Harap Masukan Kode Makanan Yang Benar !! ')
+elif pesanan == 'minum':
+    kode = input('kode minuman ? ')
+    if kode == 'et':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 3000
+        print(harga)
+    elif kode == 'ej':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 5000
+        print(harga)     
+    elif kode == 'am':
+        jumlah = int(input('berapa banyak ?'))
+        harga = jumlah * 3000
+        print(harga) 
+    else:
+        print('Harap Masukan Kode Minuman Yang Benar !! ')
+
