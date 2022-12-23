@@ -26,15 +26,15 @@ pesanan = input('Mau pesan makan atau minumm ? ')
 
 if pesanan == 'makan':
     kode = input("Kode makanan ? ")
-    if kode == 'ns':
+    if kode == 'NS':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 15000
         print(harga)
-    elif kode == 'np':
+    elif kode == 'NP':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 10000
         print(harga)
-    elif kode == 'nr':
+    elif kode == 'NR':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 15000
         print(harga)
@@ -42,15 +42,15 @@ if pesanan == 'makan':
         print('Harap Masukan Kode Makanan Yang Benar !! ')
 elif pesanan == 'minum':
     kode = input('kode minuman ? ')
-    if kode == 'et':
+    if kode == 'ET':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 3000
         print(harga)
-    elif kode == 'ej':
+    elif kode == 'EJ':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 5000
         print(harga)     
-    elif kode == 'am':
+    elif kode == 'AM':
         jumlah = int(input('berapa banyak ?'))
         harga = jumlah * 3000
         print(harga) 
