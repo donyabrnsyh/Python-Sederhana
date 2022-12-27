@@ -1,0 +1,24 @@
+print('='*10, 'Program Pencatatan Peserta', '='*10)
+
+list = []
+while True:
+    print(f'\nMasukan Nama, Umur dan Asal Kota')
+    nama = input('Masukan Nama = ')
+    umur = input('Masukan Umur = ')
+    asal = input('Masukan Asal Kota = ')
+
+    listpeserta = [nama,umur,asal]
+    list.append(listpeserta)
+
+    print(f'\n Daftar Peserta')
+    print(f'No.| Nama | Umur | Asal Kota')
+    for index,peserta in enumerate(list):
+        print(f'{index+1}  | {peserta[0]} | {peserta[1]}   | {peserta[2]} ')
+
+    print('='*20)
+    Untukberhenti = input('Apakah Ada Peserta Lagi ? (Y/N)  ')
+    if Untukberhenti == 'N':
+        break
+        
+print('Program Selesai')
+
